@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-const AddProducts = ({onAddProduct , editValue }) => {
-  const opt = ["Electornics", "Clothing", "Grocery", "others"];
+const AddProducts = ({onAddProduct , editValue , categoryOptions}) => {
+  
 
   const [productName, setProductName] = useState("");
   const [price, setPrice] = useState("");
@@ -65,7 +65,7 @@ const AddProducts = ({onAddProduct , editValue }) => {
       <label>
         Category
         <select value={category} onChange={(e) => setCategory(e.target.value)}>
-          {opt.map((option , index) => (
+          {categoryOptions.map((option , index) => (
             <option key={index}>{option}</option>
           ))}
         </select>

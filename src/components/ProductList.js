@@ -21,6 +21,8 @@ const ProductList = ({ products, onDelete, onEdit }) => {
 
   return (
     <ul style={{ display: "flex" }}>
+
+      {products.length === 0 && <h3>No products available</h3>}
       {products.map((item) => (
         <li
           key={item.id}
