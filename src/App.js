@@ -51,6 +51,8 @@ function App() {
     .sort((a, b) => {
       if (sort === "Price: Low → High") return a.price - b.price;
       if (sort === "Price: High → Low") return b.price - a.price;
+      if (sort === "Name: A → Z") return a.productName.localeCompare(b.productName);
+      if (sort === "Name: Z → A") return b.productName.localeCompare(a.productName);
       return 0;
     });
 
