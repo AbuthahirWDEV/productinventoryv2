@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const AddProducts = ({onAddProduct , editValue}) => {
+const AddProducts = ({onAddProduct , editValue }) => {
   const opt = ["Electornics", "Clothing", "Grocery", "others"];
 
   const [productName, setProductName] = useState("");
@@ -39,6 +39,7 @@ const AddProducts = ({onAddProduct , editValue}) => {
     }
     // console.log(newItem);
     onAddProduct(newItem)
+    // setEditValue("")
     setDefault()
   }
   return (
