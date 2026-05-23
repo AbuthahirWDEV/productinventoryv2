@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: productinventoryv2
+  labels:
+    app: productinventoryv2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: productinventoryv2
+  template:
+    metadata:
+      labels:
+        app: productinventoryv2
+    spec:
+      containers:
+        - name: productinventoryv2
+          image: abuthahir45/productinventoryv2:latest
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
