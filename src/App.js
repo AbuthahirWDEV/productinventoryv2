@@ -58,6 +58,7 @@ function App() {
 
   return (
     <div className="App">    
+    <h2>Image latest</h2>
       <AddProducts
         categoryOptions={opt}
         onAddProduct={handleAddProducts}
