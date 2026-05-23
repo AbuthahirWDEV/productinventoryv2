@@ -57,9 +57,7 @@ function App() {
     });
 
   return (
-    <div className="App">
-      <h3>Hello app</h3>
-    
+    <div className="App">    
       <AddProducts
         categoryOptions={opt}
         onAddProduct={handleAddProducts}
