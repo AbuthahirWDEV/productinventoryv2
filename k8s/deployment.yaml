@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: productinventoryv2
-          image: abuthahir45/productinventoryv2:84c660fa7e655759ac696aeec33db51c86b53742
+          image: abuthahir45/productinventoryv2:6f62ebc7812af5c9f4a87fedc480a6f6ff4f77eb
           ports:
             - containerPort: 80
           imagePullPolicy: Always
